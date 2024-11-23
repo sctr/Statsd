@@ -51,7 +51,7 @@ class Client
      *
      * @param array $servers les serveurs
      */
-    public function __construct(array $servers, MessageFormatterInterface $messageFormatter = null)
+    public function __construct(array $servers, ?MessageFormatterInterface $messageFormatter = null)
     {
         $this->init($servers);
         $this->initQueue();
